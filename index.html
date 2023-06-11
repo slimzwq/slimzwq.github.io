@@ -147,6 +147,151 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://slimzwq.github.io/2023/06/11/Keil5-%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wiki zhang">
+      <meta itemprop="description" content="但行好事，莫问前程">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/06/11/Keil5-%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Keil5 软件学习笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-06-11 23:59:35" itemprop="dateCreated datePublished" datetime="2023-06-11T23:59:35+08:00">2023-06-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-06-12 00:22:25" itemprop="dateModified" datetime="2023-06-12T00:22:25+08:00">2023-06-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Keil5 是ARM的一款编译器，既然是编译器，那么逃不开的一点就是debug和编译优化，以下的这些设置可以更深入地帮助你理解这款编译器，更方便地根据自己的需求进行配置。</p>
+<p><strong>前置知识：有关编译优化的知识请观看这篇博文，讲的很好：<a target="_blank" rel="noopener" href="https://juejin.cn/post/6933180767656738824">https://juejin.cn/post/6933180767656738824</a></strong></p>
+<p><strong>官方手册：<a target="_blank" rel="noopener" href="https://www.armbbs.cn/forum.php?mod=viewthread&tid=1794">https://www.armbbs.cn/forum.php?mod=viewthread&amp;tid=1794</a> 论坛可以下载,</strong></p>
+<h1 id="Debug"><a href="#Debug" class="headerlink" title="Debug"></a>Debug</h1><p><img src="/2023/06/11/Keil5-%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20230612000728618.png" alt="image-20230612000728618"></p>
+<p><img src="/2023/06/11/Keil5-%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20230612001709668.png" alt="image-20230612001709668"></p>
+<p>关闭大部分编译器优化，适合debug调试。</p>
+<h1 id="编译时间"><a href="#编译时间" class="headerlink" title="编译时间"></a>编译时间</h1><p>如果使用HAL库编译时间太长，请查看以下选项是否关闭。</p>
+<p><img src="/2023/06/11/Keil5-%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20230612001939551.png" alt="image-20230612001939551"></p>
+<p>Browse Information表示是需要go to def的支持，使用HAL库话，推荐先不要选上，因为MDK5使用AC5编译HAL库时间比较长。</p>
+<h1 id="编译优化"><a href="#编译优化" class="headerlink" title="编译优化"></a>编译优化</h1><h2 id="最佳大小"><a href="#最佳大小" class="headerlink" title="最佳大小"></a>最佳大小</h2><p>手册原文</p>
+<p><img src="/2023/06/11/Keil5-%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20230612002054663.png" alt="image-20230612002054663"></p>
+<p><img src="/2023/06/11/Keil5-%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20230612002122823.png" alt="image-20230612002122823"></p>
+<h2 id="最佳性能"><a href="#最佳性能" class="headerlink" title="最佳性能"></a>最佳性能</h2><p>手册原文</p>
+<p><img src="/2023/06/11/Keil5-%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20230612002211963.png" alt="image-20230612002211963"></p>
+<p><img src="/2023/06/11/Keil5-%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20230612002223730.png" alt="image-20230612002223730"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://slimzwq.github.io/2023/06/11/STM32f429-Discovery/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wiki zhang">
+      <meta itemprop="description" content="但行好事，莫问前程">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wiki">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/06/11/STM32f429-Discovery/" class="post-title-link" itemprop="url">STM32f429_Discovery</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-06-11 21:47:29 / Modified: 22:45:07" itemprop="dateCreated datePublished" datetime="2023-06-11T21:47:29+08:00">2023-06-11</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="AHB-Matrix-Bus"><a href="#AHB-Matrix-Bus" class="headerlink" title="AHB Matrix Bus"></a>AHB Matrix Bus</h1><p><img src="/2023/06/11/STM32f429-Discovery/image-20230611214759195.png" alt="image-20230611214759195"></p>
+<ul>
+<li><p>上方8 个主接口端</p>
+</li>
+<li><p>右方7 个从接口端</p>
+<p><strong>由于总线矩阵的存在，8个主接口端都可以发起通信，只要不是访问同一个外设，且通信的通路没有公用，那么就可以并行执行。</strong></p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://slimzwq.github.io/2023/05/14/docker-desktop-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -501,7 +646,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
